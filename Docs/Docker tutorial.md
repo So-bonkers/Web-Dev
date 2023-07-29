@@ -38,4 +38,8 @@ Containers are portable, so there must be some kind of a storage for those conta
    * Depending on which OS is used **the installation process differs**
    * **Many steps** where something could go wrong
 
-2. 
+2. **After containers**
+   * You actually do not have to install any of the services directly on your OS because the container because the container is its own isolted environment
+   * It is shipped/packaged with all needed configuration
+   * The download step is just one Docker command to install the app which fetches the container and starts it at the same time; the command is same regardless of which OS you are using
+   * You can have 2 different versions of the same applications running on your local environment without having any conflict
