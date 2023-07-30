@@ -51,4 +51,18 @@ Containers are portable, so there must be some kind of a storage for those conta
    * So, you would typically have a jar file for your application and in addition, you would have some kind of a database service also with a set of instructions of how to configure and set it up on the server
    * So, Dev team will give those artifacts to Ops team, which will handle setting up the environment to deploy.
    * Here, some of the noticable disadvantages are:
-     * You need to configure and install everything
+     * You need to configure and install everything on the OS which can
+     * cause dependency version conflicts
+     * There can also be a misunderstanding between the dev team and ops team because of the textual guide of deployment
+2. **After Containers**:
+      * Devs and Ops work together to package the application in a container
+      * **No** environmental **configuration needed on server** - except Docker Runtime
+
+
+## What is a Container (technically)?
+
+* Container is made up of images - layer of images stacked on top of each other with
+* Mostly **Linux Base Image**, because small in size
+* On top of the base image, you'd have an application image
+
+// Update : Freezing the doc until stable version for docker-desktop is avaialable for Ubuntu 23.04
