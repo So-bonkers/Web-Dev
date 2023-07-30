@@ -38,8 +38,17 @@ Containers are portable, so there must be some kind of a storage for those conta
    * Depending on which OS is used **the installation process differs**
    * **Many steps** where something could go wrong
 
-2. **After containers**
+2. **After containers**:
    * You actually do not have to install any of the services directly on your OS because the container because the container is its own isolted environment
    * It is shipped/packaged with all needed configuration
    * The download step is just one Docker command to install the app which fetches the container and starts it at the same time; the command is same regardless of which OS you are using
    * You can have 2 different versions of the same applications running on your local environment without having any conflict
+
+### How containers improved the application deployment experience
+
+1. **Before containers**:
+   * Dev team will produce artifacts together with a set of instructions of how to install and configure those artifacts on the server
+   * So, you would typically have a jar file for your application and in addition, you would have some kind of a database service also with a set of instructions of how to configure and set it up on the server
+   * So, Dev team will give those artifacts to Ops team, which will handle setting up the environment to deploy.
+   * Here, some of the noticable disadvantages are:
+     * You need to configure and install everything
